@@ -92,7 +92,7 @@ workspace(mod_name)
 		}
 
 		postbuildcommands {
-			"copy /y \"$(TargetPath)\" \"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Peggle Deluxe\\mods\\\"",
+			"copy /y \"$(TargetPath)\" \"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Peggle Nights\\mods\\\"",
 		}
 
 	group "Dependencies"
@@ -139,7 +139,7 @@ workspace(mod_name)
 		}
 
 		postbuildcommands {
-			"copy /y \"$(TargetPath)\" \"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Peggle Deluxe\\mods\\\"",
+			"copy /y \"$(TargetPath)\" \"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Peggle Nights\\mods\\\"",
 		}
 
 	project "ini_rw"
@@ -147,9 +147,9 @@ workspace(mod_name)
 		kind "staticlib"
 
 		files {
-			"../deps/ini_rw/src/**",
+			"./deps/ini_rw/src/**",
 		}
 
 		includedirs {
-			"../deps/ini_rw/src/",
+			"./deps/ini_rw/src/",
 		}
